@@ -1,8 +1,8 @@
-# docker-python-django
+# docker-python3-django
 
-> Generic base Docker image for Django
+> Generic base Docker image for Django (Python 3)
 
-Simple [Alpine Linux](https://alpinelinux.org/) Python Docker image with additional components installed.
+Simple [Alpine Linux](https://alpinelinux.org/) Python 3 Docker image with additional components installed.
 
 ## Contributing
 
