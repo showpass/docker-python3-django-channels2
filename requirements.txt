@@ -22,3 +22,4 @@ six==1.10.0
 txaio==2.10.0
 zope.interface==4.5.0
 uvicorn==0.8.4
+Pandas==0.24.2
