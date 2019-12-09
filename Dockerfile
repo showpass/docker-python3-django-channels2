@@ -2,13 +2,9 @@ FROM python:3.7-alpine3.9
 
 ENV PYTHONUNBUFFERED 1
 
-# Install Python dependencies
-RUN echo "http://dl-2.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories; \
-    echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories; \
-    echo "http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories;
 RUN apk -q update
 RUN apk -q add --update curl curl-dev # Curl
-RUN apk -q --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main add openssl openssl-dev git
+RUN apk -q --no-cache add openssl openssl-dev git
 RUN apk -q --no-cache add py-gdal geos-dev geoip-dev gdal-dev gdal # PostGIS
 RUN apk -q --no-cache add postgresql-dev
 RUN apk -q --no-cache add linux-headers  # psutil
