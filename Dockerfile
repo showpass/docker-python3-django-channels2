@@ -9,7 +9,7 @@ RUN apk add --update curl curl-dev # Curl
 RUN apk --no-cache add openssl openssl-dev git
 RUN apk --no-cache add gdal
 RUN apk --no-cache add gdal-dev
-RUN apk --no-cache add py-gdal geos-dev geoip-dev
+RUN apk --no-cache add py3-gdal geos-dev geoip-dev
 RUN apk --no-cache add postgresql-dev
 RUN apk --no-cache add linux-headers  # psutil
 RUN apk --no-cache add bash  # bash
