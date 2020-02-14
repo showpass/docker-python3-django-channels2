@@ -28,5 +28,5 @@ RUN pip install Pandas==0.25.0
 RUN rm requirements.txt
 
 # STATIC REQUIREMENTS
-RUN apk --no-cache add nodejs
-RUN apk --no-cache add nodejs-npm
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.10/main/ nodejs=10.19.0-r0
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.10/main/ nodejs-npm=10.19.0-r0
