@@ -26,3 +26,7 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt # Install dependencies that take a long time
 RUN pip install Pandas==0.25.0
 RUN rm requirements.txt
+
+# STATIC REQUIREMENTS
+RUN apk --no-cache add nodejs
+RUN apk --no-cache add nodejs-npm
