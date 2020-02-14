@@ -1,0 +1,4 @@
+# Indicates how to build images when new commit is pushed to develop
+ steps:
+ - name: 'gcr.io/kaniko-project/executor:latest'
+   args: ['--destination=gcr.io/$PROJECT_ID/sp-base-django3-image', '--cache=true']
