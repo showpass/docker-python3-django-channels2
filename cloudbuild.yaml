@@ -2,3 +2,4 @@
  steps:
  - name: 'gcr.io/kaniko-project/executor:latest'
    args: ['--destination=gcr.io/$PROJECT_ID/sp-base-django3-image', '--cache=true']
+   timeout: 1800s
