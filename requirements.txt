@@ -9,7 +9,7 @@ lxml==4.2.1
 cryptography==2.3
 asgiref==3.1.2
 cffi==1.11.2
-autobahn==17.9.1
+autobahn==20.12.3
 h2==3.0.1
 hpack==3.0.0
 hyperframe==5.1.0
